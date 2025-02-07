@@ -1,12 +1,6 @@
-# pythonwebscraper-
-Just a simple python web scraper with gui using Trafilatura and BeautifulSoup outputting to CSV
-
-
-Here’s the formatted version for an README.md file:
-
 # Web Scraper GUI with Recursive Crawling
 
-This project is a GUI-based web scraper built using `Tkinter` that recursively crawls a given website, extracts text content, and saves it to a CSV file. The scraper filters URLs based on domain, unwanted file types, and specific terms to avoid unnecessary or irrelevant links.
+This project is a simple GUI-based web scraper built using Tkinter, Trafilatura and BeautifulSoup that recursively crawls a given website, extracts text content, and saves it to a CSV file. The scraper filters URLs based on domain, unwanted file types, and specific terms to avoid unnecessary or irrelevant links. Only built it for testing and getting data for vector databases. 
 
 ---
 
