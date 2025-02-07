@@ -23,55 +23,51 @@ This project is a GUI-based web scraper built using `Tkinter` that recursively c
 ## Requirements
 
 - Python 3.x
-- The following Python libraries:
-  ```sh
-  pip install trafilatura beautifulsoup4
+- The following Python libraries: trafilatura, beautifulsoup4
 
 ## How to Run
-	1.	Clone the repository:
+1. Clone the repository
 
-git clone https://github.com/yourusername/web-scraper-gui.git
-cd web-scraper-gui
+2. Install the dependencies:
+```sh
+pip install trafilatura
+pip install beautifulsoup4
 
+```
 
-	2.	Install the dependencies:
-
-pip install -r requirements.txt
-
-
-	3.	Run the application:
-
+3. Run the application:
+```sh
 python scraper_gui.py
-
+```
 ## Usage
-	1.	Start the application: Upon running scraper_gui.py, a GUI window will open.
-	2.	Enter inputs:
-	•	Start URL: The initial URL where the scraper will begin crawling.
-	•	Max Depth: The maximum depth of recursion for crawling.
-	•	Output CSV File: The name of the CSV file to save scraped content.
-	3.	Click “Start Scraping” to begin. Progress and logs will appear in the text box.
+1. Start the application: Upon running scraper_gui.py, a GUI window will open.
+2. Enter inputs:
+• Start URL: The initial URL where the scraper will begin crawling.
+• Max Depth: The maximum depth of recursion for crawling.
+• Output CSV File: The name of the CSV file to save scraped content.
+3. Click “Start Scraping” to begin. Progress and logs will appear in the text box.
 
 ## CSV Output
 
 The output CSV will contain:
-	•	URL: The scraped URL.
-	•	Content: The extracted content from the page.
+• URL: The scraped URL.
+• Content: The extracted content from the page.
 
 ## URL Filtering
-	•	Excluded file extensions: The scraper skips URLs ending with specific extensions like .pdf, .jpg, .aspx, etc.
-	•	Excluded terms: URLs containing certain terms like news or # will be ignored.
-	•	Domain restriction: Only URLs within the same domain as the start URL will be followed.
+• Excluded file extensions: The scraper skips URLs ending with specific extensions like .pdf, .jpg, .aspx, etc.
+• Excluded terms: URLs containing certain terms like news or # will be ignored.
+• Domain restriction: Only URLs within the same domain as the start URL will be followed.
 
 ## Customisation
 
 To customise the scraper’s behaviour:
-	•	Modify the excluded_extensions and excluded_terms lists in scraper_gui.py.
-	•	Adjust the delay between requests by changing time.sleep(1) in the recursive_scrape function.
+• Modify the excluded_extensions and excluded_terms lists in scraper_gui.py.
+• Adjust the delay between requests by changing time.sleep(1) in the recursive_scrape function.
 
 ## Future Improvements
-	•	Add multithreading support for faster crawling.
-	•	Integrate a progress bar for better user feedback.
-	•	Expand the exclusion logic with regex-based URL filters.
+• Add multithreading support for faster crawling.
+• Integrate a progress bar for better user feedback.
+• Expand the exclusion logic with regex-based URL filters.
 
 ## License
 
